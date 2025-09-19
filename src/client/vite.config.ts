@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwind()],
   build: {
     outDir: '../../dist/client',
-    sourcemap: true,
+    sourcemap: false,
     rollupOptions: {
       output: {
         entryFileNames: '[name].js',

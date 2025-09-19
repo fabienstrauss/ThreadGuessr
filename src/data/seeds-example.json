@@ -1,0 +1,35 @@
+[
+  {
+    "id": "perfectlyRandomID",
+    "sourcePostId": "anotherID?",
+    "sourceUrl": "https://reddit.com/r/{{subreddit}}/comments/{{id}}/{{post}}/",
+    "answerSub": "iLikeReddit",
+    "title": "This is an example for the seeds.json",
+    "media": {
+      "type": "video",
+      "thumbUrl": "url",
+      "url": "url",
+      "hlsUrl": "url",
+      "width": 1280,
+      "height": 720
+    },
+    "tags": [
+      "i",
+      "Like",
+      "Reddit"
+    ],
+    "group": "perfectGroupName",
+    "distractors": [
+      "Snoo4Ever",
+      "Reddit4Life",
+      "Hello"
+    ],
+    "active": true,
+    "nsfw": false,
+    "spoiler": false,
+    "status": "approved",
+    "addedAt": 1758279698261,
+    "approvedAt": 1758279698261,
+    "approvedBy": "someone"
+  }
+]

@@ -3,17 +3,15 @@
   "name": "threadguessr",
   "post": {
     "dir": "dist/client",
-    "entrypoints": {
-      "default": {
-        "entry": "index.html"
-      }
-    }
+    "entrypoints": { "default": { "entry": "index.html" } }
   },
   "server": {
     "dir": "dist/server",
     "entry": "index.cjs"
   },
-  "media": {},
+  "media": {
+    "dir": "src/client/assets"
+  },
   "menu": {
     "items": [
       {
@@ -25,10 +23,6 @@
       }
     ]
   },
-  "triggers": {
-    "onAppInstall": "/internal/on-app-install"
-  },
-  "dev": {
-    "subreddit": "threadguessr_dev"
-  }
+  "triggers": { "onAppInstall": "/internal/on-app-install" },
+  "dev": { "subreddit": "threadguessr_dev" }
 }

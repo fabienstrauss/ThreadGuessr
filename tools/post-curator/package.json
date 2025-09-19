@@ -1,0 +1,36 @@
+{
+  "name": "threadguessr-post-curator",
+  "version": "1.0.0",
+  "description": "Tool for curating ThreadGuessr posts from Reddit",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "tsx watch server/index.ts",
+    "dev:client": "vite",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "vite build",
+    "build:server": "tsx server/index.ts",
+    "test-reddit": "node test-reddit.js",
+    "test-simple": "tsx server/simple-reddit-test.ts",
+    "test-iteration": "tsx server/test-iteration.ts",
+    "test-duplicates": "tsx server/test-duplicates.ts"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "snoowrap": "^1.23.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/cors": "^2.8.13",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "^4.1.1",
+    "tsx": "^4.6.2",
+    "vite": "^5.0.2",
+    "concurrently": "^8.2.2",
+    "typescript": "^5.2.2"
+  }
+}
